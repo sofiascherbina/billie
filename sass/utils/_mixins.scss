@@ -1,0 +1,6 @@
+@mixin text($family:"Chathura", $weight:700, $size: 36px, $color:black){
+    font-family: $family;
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;
+}

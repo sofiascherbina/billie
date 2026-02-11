@@ -1,0 +1,130 @@
+.navigation{
+    width: 100%;
+    background-color:$dark-brown;
+    height: 120px;
+    padding: 40px 0;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    li{
+        transition: transform 0.3s ease;
+         &:hover{
+         transform: scale(1.05)
+    }
+    }
+    a {
+        @include text($family:"Chelsea Market",$weight:400,$size:30px);
+    }
+}
+.slider{
+    width: 100%;
+    height: 370px;
+    border: 1px solid red;
+}
+.main-title{
+    @include text($family:"Chau Philomene One", $weight:400, $size:64px);
+    text-shadow: 0 8px 5px rgba($color: #000000, $alpha: 0.25);
+    text-align: center;
+}
+.sec-title{
+        display: inline-block;
+        @include text( $weight:800, $size:70px);
+        border-bottom: 2px solid rgba($color: #000000, $alpha: 0.8);
+        width: auto;
+        padding-right: 20px;
+        margin-bottom: 20px;
+}
+.text{
+    @include text();
+    background-color: white;
+    padding:15px;
+    text-align: justify;
+    box-shadow: 0 6px 10px rgba($color: #000000, $alpha: 0.25);
+}
+.img-div{
+    background-color: white;
+    padding: 25px 50px;
+    box-shadow: 7px 7px 10px rgba($color: #000000, $alpha: 0.25);
+}
+
+.homeSec{
+    margin-bottom: 100px;
+    .sec-title{
+        border-bottom: 2px solid rgba($color: #000000, $alpha: 0.8);
+    }
+    .content{
+        display: flex;
+        gap: 80px;
+        margin: 0 10px;
+        .img-div{
+            width: 500px;
+            height: 400px;
+        }
+        .text{
+            width: 1200px;
+            height: 350px;
+            margin-top: 20px;
+        }
+    }
+}
+.danceSec{
+    margin-bottom: 100px;
+    .content{
+        display: flex;
+        gap: 150px;
+        margin: 0 10px;
+        .img-div{
+            width: 520px;
+            height: 400px;
+        }
+        .text{
+            width: 700px;
+            height: 330px;
+            margin-top: 30px;
+        }
+    }
+}
+.awardsSec{
+    margin-bottom: 100px;
+    .text-first{
+        width: 600px;
+        height: 300px;
+        margin-top: 20px;
+    }
+    .img-div-first{
+        width: 300px ;
+        height:350px ;
+        padding: 20px 25px;
+    }
+    .content{
+        display: flex;
+        gap: 50px;
+    }
+     .text-second{
+        width: 600px;
+        height: 400px;
+        margin-top: 30px;
+    }
+    .img-div-second{
+        padding: 20px 30px;
+    }
+}
+.touretteSec{
+    .content{
+        display: flex;
+        gap: 50px;
+    }
+    .text{
+        width: 550px;
+        height: 250px;
+        margin-top: 20px;
+    }
+    .img-div{
+        width: 300px;
+        height: 330px;
+        padding: 10px 25px;
+    }
+}

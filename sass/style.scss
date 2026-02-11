@@ -1,0 +1,16 @@
+@import "./utils/vars", "./utils/mixins","./componemts/main";
+
+body{
+    background-color: $main-bg;
+}
+*{
+    list-style-type: none;
+    text-decoration: none;
+}
+p{
+    margin: 0;
+}
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
