@@ -78,7 +78,7 @@
 }
 
 .homeSec {
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 .homeSec .sec-title {
   border-bottom: 2px solid rgba(0, 0, 0, 0.8);
@@ -101,7 +101,7 @@
 }
 
 .danceSec {
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 .danceSec .content {
   display: -webkit-box;
@@ -121,7 +121,7 @@
 }
 
 .awardsSec {
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 .awardsSec .text-first {
   width: 600px;
@@ -137,7 +137,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 50px;
+  gap: 70px;
 }
 .awardsSec .text-second {
   width: 600px;
@@ -148,11 +148,16 @@
   padding: 20px 30px;
 }
 
+.touretteSec {
+  margin-bottom: 70px;
+}
 .touretteSec .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 50px;
+  gap: 90px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .touretteSec .text {
   width: 550px;
@@ -160,9 +165,142 @@
   margin-top: 20px;
 }
 .touretteSec .img-div {
+  width: 350px;
+  height: 400px;
+  padding: 15px 25px;
+  margin-top: -20px;
+}
+.touretteSec .link {
+  background-color: white;
+  padding: 15px 20px;
+  text-align: justify;
+  -webkit-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
   width: 300px;
-  height: 330px;
-  padding: 10px 25px;
+  height: 70px;
+  margin-top: -160px;
+}
+.touretteSec .link a {
+  font-family: "Chathura";
+  font-weight: 700;
+  font-size: 36px;
+  color: black;
+  color: #BEB7B4;
+}
+.touretteSec .link a:hover {
+  color: #716B69;
+}
+
+.supportSec {
+  margin-bottom: 70px;
+}
+.supportSec .sec-title {
+  margin-top: 0px;
+}
+.supportSec .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 0px;
+  -webkit-column-gap: 70px;
+     -moz-column-gap: 70px;
+          column-gap: 70px;
+}
+.supportSec .text-first {
+  width: 600px;
+  height: 270px;
+}
+.supportSec .text-second {
+  width: 500px;
+  height: 200px;
+  margin-top: 20px;
+}
+.supportSec .img-div-first {
+  width: 350px;
+  height: 400px;
+  padding: 10px 40px;
+}
+.supportSec .img-div-second {
+  width: 400px;
+  height: 290px;
+  padding: 13px 50px;
+  margin-top: -100px;
+}
+
+.tattoSec {
+  margin-bottom: 70px;
+}
+.tattoSec .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 80px;
+}
+.tattoSec .text {
+  width: 600px;
+  height: 450px;
+}
+.tattoSec .text ul {
+  margin: 0;
+  padding: 0;
+}
+.tattoSec .img-div {
+  width: 340px;
+  height: 340px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: #BEB7B4;
+  background-image: url("/img/footer-img.png");
+  background-position: 50px bottom;
+  background-repeat: no-repeat;
+  background-size: 213px 200px;
+}
+footer .note {
+  width: 500px;
+  margin: 30px 550px;
+  text-align: center;
+}
+footer .note p {
+  font-family: "Charmonman";
+  font-weight: 400;
+  font-size: 15px;
+  color: #FBF7F5;
+}
+footer .note span {
+  font-family: "Chathura";
+  font-weight: 400;
+  font-size: 25px;
+  color: #FBF7F5;
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 600px;
+  padding-top: 60px;
+  text-align: center;
+  gap: 200px;
+}
+.footer-content .phrase {
+  padding-top: 10px;
+  font-family: "Chathura";
+  font-weight: 600;
+  font-size: 30px;
+  color: #FBF7F5;
+}
+.footer-content .networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
 }
 
 body {

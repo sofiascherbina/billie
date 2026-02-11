@@ -4,3 +4,9 @@
     font-size: $size;
     color: $color;
 }
+@mixin bg($url, $position, $size, $repeat:no-repeat){
+    background-image: $url;
+    background-position: $position;
+    background-repeat: $repeat;
+    background-size: $size;
+}
