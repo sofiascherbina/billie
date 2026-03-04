@@ -1,3 +1,7 @@
+.home-main {
+  background-color: #FBF7F5;
+}
+
 .navigation {
   width: 100%;
   background-color: #BEB7B4;
@@ -33,7 +37,7 @@
 }
 
 .hero {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.25);
           box-shadow: 0 10px 50px rgba(0, 0, 0, 0.25);
   border-bottom-right-radius: 50px;
@@ -382,11 +386,134 @@ footer .note span {
 }
 
 .back-home-btn {
-  margin-left: 50px;
+  margin-left: 100px;
 }
 
-body {
+.albums-nav {
   background-color: #FBF7F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 350px;
+  height: 150px;
+  padding: 50px 0;
+  background-image: url("/img/al-header.png");
+  background-position: 1300px 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-box-shadow: 6px 6px 6px black;
+          box-shadow: 6px 6px 6px black;
+}
+
+.title-al {
+  text-align: center;
+  font-family: "Covered By Your Grace";
+  font-weight: 400;
+  font-size: 48px;
+  color: #7C7064;
+  text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+
+.al-main {
+  background-color: #BEB7B4;
+  padding-top: 100px;
+}
+
+.al-title {
+  font-family: "Chau Philomene One";
+  font-weight: 400;
+  font-size: 64px;
+  color: #FBF7F5;
+  margin-top: 0;
+}
+
+.al-main-title {
+  font-family: "Chathura";
+  font-weight: 700;
+  font-size: 96px;
+  color: #FBF7F5;
+  width: 1100px;
+  padding: 15px;
+  border-bottom: 3px solid #FBF7F5;
+  margin: 30px 0;
+  line-height: 50px;
+}
+
+.albums-title {
+  background-image: url("/img/album-title.png");
+  background-position: 700px bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 30px 0;
+  line-height: 70px;
+  height: 150px;
+  line-height: 70px;
+  padding: 70px 60px;
+}
+
+.albums-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 100px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.albums-list_li {
+  width: 400px;
+  height: 500px;
+}
+
+.singles-cont {
+  width: 1000px;
+  height: 610px;
+  padding: 15px 20px;
+  margin: 0 auto;
+}
+
+.singles-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 100px;
+}
+.singles-list_li {
+  width: 200px;
+  height: 192px;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+.al-footer {
+  background-color: #FBF7F5;
+  color: #FBF7F5;
+  margin: 0;
+}
+.al-footer .note p {
+  font-family: "Charmonman";
+  font-weight: 400;
+  font-size: 15px;
+  color: #BEB7B4;
+}
+.al-footer .note span {
+  font-family: "Chathura";
+  font-weight: 400;
+  font-size: 25px;
+  color: #BEB7B4;
+}
+
+.footer-content-al .phrase {
+  font-family: "Chathura";
+  font-weight: 600;
+  font-size: 30px;
+  color: #BEB7B4;
 }
 
 * {

@@ -1,8 +1,6 @@
 @import "./utils/vars", "./utils/mixins","./components/main", "./components/albums";
 
-body{
-    background-color: $main-bg;
-}
+
 *{
     list-style-type: none;
     text-decoration: none;
