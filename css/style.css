@@ -32,7 +32,7 @@
   font-family: "Chelsea Market";
   font-weight: 400;
   font-size: 30px;
-  color: black;
+  color: #1E1E1E;
   text-decoration: none;
 }
 
@@ -112,7 +112,7 @@
   font-family: "Chau Philomene One";
   font-weight: 400;
   font-size: 64px;
-  color: black;
+  color: #1E1E1E;
   text-shadow: 0 8px 5px rgba(0, 0, 0, 0.25);
   text-align: center;
 }
@@ -122,7 +122,7 @@
   font-family: "Chathura";
   font-weight: 800;
   font-size: 70px;
-  color: black;
+  color: #1E1E1E;
   border-bottom: 2px solid rgba(0, 0, 0, 0.8);
   width: auto;
   padding-right: 20px;
@@ -133,7 +133,7 @@
   font-family: "Chathura";
   font-weight: 700;
   font-size: 36px;
-  color: black;
+  color: #1E1E1E;
   background-color: white;
   padding: 15px;
   text-align: justify;
@@ -258,7 +258,7 @@
   font-family: "Chathura";
   font-weight: 700;
   font-size: 36px;
-  color: black;
+  color: #1E1E1E;
   text-decoration: none;
   color: #BEB7B4;
 }
@@ -460,13 +460,198 @@ footer .note span {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0;
+  margin-bottom: 100px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
 .albums-list_li {
   width: 400px;
-  height: 500px;
+  height: 600px;
+  border-radius: 25px;
+  padding: 0 45px;
+  -webkit-box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+}
+.albums-list_li .album-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.albums-list_li .album-text {
+  text-align: center;
+  line-height: 35px;
+}
+.albums-list_li .album-cover {
+  width: 262px;
+  height: 150px;
+  margin: 0 auto 30px;
+}
+.albums-list_li {
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.albums-list_li:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.albums-list .firstAl {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 219, 88, 0.5)), to(rgba(255, 219, 88, 0.5))), url("/img/firstAl.png");
+  background-image: linear-gradient(rgba(255, 219, 88, 0.5), rgba(255, 219, 88, 0.5)), url("/img/firstAl.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.albums-list .firstAl .album-title {
+  font-family: "Chathura";
+  font-weight: 800;
+  font-size: 48px;
+  color: #1E1E1E;
+}
+.albums-list .firstAl .album-text {
+  font-family: "Chathura";
+  font-weight: 800;
+  font-size: 32px;
+  color: #1E1E1E;
+}
+.albums-list .firstAl .listen-btn {
+  border: 3px solid #1E1E1E;
+  color: #1E1E1E;
+}
+.albums-list .firstAl .listen-btn:hover {
+  color: #FFDB58;
+  border: 3px solid #FFDB58;
+}
+.albums-list .firstAl .album-cover {
+  background-image: url("/img/firstCover.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.albums-list .secondAl {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(54, 45, 43, 0.5)), to(rgba(54, 45, 43, 0.5))), url("/img/secondAl.png");
+  background-image: linear-gradient(rgba(54, 45, 43, 0.5), rgba(54, 45, 43, 0.5)), url("/img/secondAl.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.albums-list .secondAl .album-title {
+  margin: 30px 0 20px;
+  font-family: "Chathura";
+  font-weight: 800;
+  font-size: 48px;
+  color: #E8E7E8;
+  line-height: 35px;
+}
+.albums-list .secondAl .album-text {
+  font-family: "Chathura";
+  font-weight: 800;
+  font-size: 32px;
+  color: #E8E7E8;
+}
+.albums-list .secondAl .listen-btn {
+  border: 3px solid #E8E7E8;
+  margin-top: 40px;
+  color: #E8E7E8;
+}
+.albums-list .secondAl .listen-btn:hover {
+  color: #362D2B;
+  border: 3px solid #362D2B;
+}
+.albums-list .secondAl .album-cover {
+  background-image: url("/img/secondCover.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.albums-list .thirdAl {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(151, 112, 79, 0.6)), to(rgba(151, 112, 79, 0.6))), url("/img/thirdAl.png");
+  background-image: linear-gradient(rgba(151, 112, 79, 0.6), rgba(151, 112, 79, 0.6)), url("/img/thirdAl.png");
+  background-position: center, center -100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.albums-list .thirdAl .album-title {
+  margin-top: 40px;
+  font-family: "Chathura";
+  font-weight: 800;
+  font-size: 48px;
+  color: #DDCFBF;
+}
+.albums-list .thirdAl .album-text {
+  font-family: "Chathura";
+  font-weight: 800;
+  font-size: 32px;
+  color: #DDCFBF;
+}
+.albums-list .thirdAl .listen-btn {
+  border: 3px solid #DDCFBF;
+  color: #DDCFBF;
+  margin-top: 30px;
+}
+.albums-list .thirdAl .listen-btn:hover {
+  color: #7C5C41;
+  border: 3px solid #7C5C41;
+}
+.albums-list .thirdAl .album-cover {
+  margin-bottom: 60px;
+  background-image: url("/img/thirdCover.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.albums-list .fourthAl {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 25, 49, 0.6)), to(rgba(15, 25, 49, 0.6))), url("/img/fourthAl.png");
+  background-image: linear-gradient(rgba(15, 25, 49, 0.6), rgba(15, 25, 49, 0.6)), url("/img/fourthAl.png");
+  background-position: center, center -10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.albums-list .fourthAl .album-title {
+  margin-top: 40px;
+  font-family: "Chathura";
+  font-weight: 800;
+  font-size: 48px;
+  color: #EAE7E1;
+}
+.albums-list .fourthAl .album-text {
+  font-family: "Chathura";
+  font-weight: 800;
+  font-size: 32px;
+  color: #EAE7E1;
+}
+.albums-list .fourthAl .listen-btn {
+  border: 3px solid #EAE7E1;
+  color: #EAE7E1;
+  margin-top: 30px;
+}
+.albums-list .fourthAl .listen-btn:hover {
+  color: #253864;
+  border: 3px solid #253864;
+}
+.albums-list .fourthAl .album-cover {
+  margin-bottom: 60px;
+  background-image: url("/img/fourthCover.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.listen-btn {
+  display: block;
+  width: 260px;
+  height: 45px;
+  background-color: inherit;
+  border: 3px solid #E8E7E8;
+  border-radius: 25px;
+  font-family: "Chelsea Market";
+  font-weight: 400;
+  font-size: 16px;
+  color: #1E1E1E;
+  text-align: center;
+  padding: 5px 0;
+  margin: 10px auto;
 }
 
 .singles-cont {
@@ -489,6 +674,10 @@ footer .note span {
   height: 192px;
   border: 1px solid black;
   border-radius: 25px;
+  font-family: "Chathura";
+  font-weight: 700;
+  font-size: 48px;
+  color: #FBF7F5;
 }
 
 .al-footer {

@@ -25,7 +25,7 @@
     margin-top: 0;
 }
 .al-main-title{
-    @include text($family:"Chathura", $size:96px, $color:$main-bg);
+    @include text( $size:96px, $color:$main-bg);
     width: 1100px;
     padding: 15px;
     border-bottom: 3px solid $main-bg;
@@ -45,11 +45,141 @@
     gap: 100px;
     flex-wrap: wrap;
     padding: 0;
+    margin-bottom: 100px;
     justify-content: space-evenly;
     &_li{
         width: 400px;
-        height: 500px;
+        height: 600px;
+        border-radius: 25px;
+        padding: 0 45px;
+        box-shadow: 10px 10px 4px rgba($color: #000000, $alpha: 25%);
+         & .album-title{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        & .album-text{
+            text-align: center;
+            line-height: 35px;
+        }
+        & .album-cover{
+            width: 262px;
+            height: 150px;
+            margin: 0 auto 30px;
+        }
+        transition: transform 0.3s ease;
+            &:hover{
+                transform: scale(1.05)
+            }
     }
+    & .firstAl{
+        @include bg($url:( 
+        linear-gradient(rgba(#FFDB58,0.5), rgba(#FFDB58,0.5)),
+        url("/img/firstAl.png")), $position:top, $size:cover);
+        & .album-title{
+            @include text( $size:48px, $color:#1E1E1E, $weight:800);
+        }
+        & .album-text{
+            @include text( $size:32px, $color:#1E1E1E, $weight:800);
+        }
+        & .listen-btn{
+            border: 3px solid #1E1E1E;
+            color:#1E1E1E ;
+            &:hover{
+                color: #FFDB58;
+                border: 3px solid #FFDB58;
+            }
+        }
+        & .album-cover{
+            @include bg($url:url('/img/firstCover.png'), $size:cover, $position:center);
+        }
+    }
+    & .secondAl{
+       @include bg($url:( 
+       linear-gradient(rgba(#362D2B,0.5), rgba(#362D2B,0.5)),
+       url("/img/secondAl.png")), $position:bottom, $size:cover);
+       & .album-title{
+           margin: 30px 0 20px;
+           @include text( $size:48px, $color:#E8E7E8, $weight:800);
+           line-height: 35px;
+       }
+       & .album-text{
+           @include text( $size:32px, $color:#E8E7E8, $weight:800);
+       }
+       & .listen-btn{
+           border: 3px solid #E8E7E8;
+           margin-top: 40px;
+           color:#E8E7E8 ;
+            &:hover{
+                color: #362D2B;
+                border: 3px solid #362D2B;
+            }
+       }
+       & .album-cover{
+           @include bg($url:url('/img/secondCover.png'), $size:cover, $position:center);
+       }
+    }
+    & .thirdAl{
+        @include bg($url:( 
+        linear-gradient(rgba(#97704F,0.6), rgba(#97704F,0.6)),
+        url("/img/thirdAl.png")), $position:(center, center -100px), $size:cover);
+        & .album-title{
+            margin-top: 40px;
+            @include text( $size:48px, $color:#DDCFBF, $weight:800);
+        }
+        & .album-text{
+            @include text( $size:32px, $color:#DDCFBF, $weight:800);
+        }
+        & .listen-btn{
+            border: 3px solid #DDCFBF;
+            color: #DDCFBF;
+            margin-top: 30px;
+             &:hover{
+                color: #7C5C41;
+                border: 3px solid #7C5C41;
+            }
+        }
+        & .album-cover{
+            margin-bottom: 60px;
+            @include bg($url:url('/img/thirdCover.png'), $size:cover, $position:center);
+        }
+    }
+     & .fourthAl{
+        @include bg($url:( 
+        linear-gradient(rgba(#0F1931,0.6), rgba(#0F1931,0.6)),
+        url("/img/fourthAl.png")), $position:(center, center -10px), $size:cover);
+        & .album-title{
+            margin-top: 40px;
+            @include text( $size:48px, $color:#EAE7E1, $weight:800);
+        }
+        & .album-text{
+            @include text( $size:32px, $color:#EAE7E1, $weight:800);
+        }
+        & .listen-btn{
+            border: 3px solid #EAE7E1;
+            color: #EAE7E1;
+            margin-top: 30px;
+             &:hover{
+                color: #253864;
+                border: 3px solid #253864;
+            }
+        }
+        & .album-cover{
+            margin-bottom: 60px;
+            @include bg($url:url('/img/fourthCover.png'), $size:cover, $position:center);
+        }
+    }
+}
+.listen-btn{
+    display: block;
+    width: 260px;
+    height: 45px;
+    background-color: inherit;
+    border: 3px solid #E8E7E8;
+    border-radius: 25px;
+    @include text($family:'Chelsea Market', $size:16px, $weight:400);
+    text-align: center;
+    padding: 5px 0;
+    margin: 10px auto;
 }
 .singles-cont{
     width: 1000px;
@@ -66,6 +196,7 @@
         height: 192px;
         border: 1px solid black;
         border-radius: 25px;
+        @include text($size:48px, $color:#FBF7F5)
     }
 }
 .al-footer{
