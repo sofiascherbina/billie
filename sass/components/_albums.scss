@@ -40,6 +40,35 @@
     line-height: 70px;
     padding: 70px 60px;
 }
+.album-cover{
+    position: relative;
+    @include bg($url:url('/img/cd.png'), $size:cover, $position:center);
+    width: 262px;
+    height: 150px;
+    & .cover{
+        position: relative;
+        z-index: 1;
+        width:160px ;
+        height: 160px;
+    }
+    & .songList{
+        position: absolute;
+        z-index: 0;
+        top: 0px;
+        left: 0;
+        width:160px ;
+        height: 160px;
+        transition: transform 0.3s ease;
+        border-radius: 25px;
+       & p{
+            padding: 0;
+            margin: 0;
+       } 
+    }
+    &:hover .songList{        
+        transform: translateX(130px);       
+    }
+}
 .albums-list{
     display: flex;
     gap: 100px;
@@ -89,8 +118,16 @@
                 border: 3px solid #FFDB58;
             }
         }
-        & .album-cover{
+        & .cover{
             @include bg($url:url('/img/firstCover.png'), $size:cover, $position:center);
+        }
+        & .songList{
+            padding-top: 5px;
+            background-color: rgba($color: #EDD784, $alpha: 0.8);
+            & p {
+                line-height: 17px;
+               @include text( $size:20px, $color:#1E1E1E, $weight:800);
+            }
         }
     }
     & .secondAl{
@@ -114,9 +151,17 @@
                 border: 3px solid #362D2B;
             }
        }
-       & .album-cover{
-           @include bg($url:url('/img/secondCover.png'), $size:cover, $position:center);
-       }
+           & .cover{
+            @include bg($url:url('/img/secondCover.png'), $size:cover, $position:center);
+        }
+        & .songList{
+            padding-top: 5px;
+            background-color: rgba($color: #362D2B, $alpha: 0.8);
+            & p {
+                line-height: 15px;
+               @include text( $size:20px, $color:#E8E7E8, $weight:800);
+            }
+        }
     }
     & .thirdAl{
         @include bg($url:( 
@@ -138,9 +183,16 @@
                 border: 3px solid #7C5C41;
             }
         }
-        & .album-cover{
-            margin-bottom: 60px;
+         & .cover{
             @include bg($url:url('/img/thirdCover.png'), $size:cover, $position:center);
+        }
+        & .songList{
+            padding-top: 5px;
+            background-color: rgba($color: #684430, $alpha: 0.8);
+            & p {
+                line-height: 15px;
+               @include text( $size:20px, $color:#DDCFBF, $weight:800);
+            }
         }
     }
      & .fourthAl{
@@ -163,9 +215,16 @@
                 border: 3px solid #253864;
             }
         }
-        & .album-cover{
-            margin-bottom: 60px;
+         & .cover{
             @include bg($url:url('/img/fourthCover.png'), $size:cover, $position:center);
+        }
+        & .songList{
+            padding-top: 5px;
+            background-color: rgba($color: #094164, $alpha: 0.8);
+            & p {
+                line-height: 15px;
+               @include text( $size:20px, $color:#EAE7E1, $weight:800);
+            }
         }
     }
 }
@@ -178,7 +237,7 @@
     border-radius: 25px;
     @include text($family:'Chelsea Market', $size:16px, $weight:400);
     text-align: center;
-    padding: 5px 0;
+    padding: 10px 0;
     margin: 10px auto;
 }
 .singles-cont{
@@ -207,8 +266,12 @@
         border-radius: 25px;
         @include text($size:48px, $color:#FBF7F5);
         text-align: center;
-        padding-top: 50px;
+        padding: 50px 15px 0;
         box-shadow: 7px 10px 4px rgba($color: #000000, $alpha: 25%);
+        transition: transform 0.3s ease;
+        &:hover{
+            transform:scale(1.05) ;
+        }
     }
 }
 .listenSin{
@@ -227,7 +290,7 @@
                 transform: scale(1.05)
             }
 }
-$icons: "sinFirst", "sinSecond", "sinThird", "sinFourth", "sinFifth ", "sinSixth";
+$icons: "sinFirst", "sinSecond", "sinThird", "sinFourth", "sinFifth", "sinSixth";
     @each $icons-items in $icons{
     .singles-#{$icons-items}{
          @include bg($url:( 

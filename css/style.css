@@ -305,7 +305,7 @@
 }
 
 .tattoSec {
-  margin-bottom: 130px;
+  padding-bottom: 130px;
 }
 .tattoSec .content {
   display: -webkit-box;
@@ -332,7 +332,6 @@ footer {
   width: 100%;
   height: 210px;
   background-color: #BEB7B4;
-  margin-top: 150px;
   background-image: url("/img/footer-img.png");
   background-position: 50px bottom;
   background-repeat: no-repeat;
@@ -452,6 +451,43 @@ footer .note span {
   padding: 70px 60px;
 }
 
+.album-cover {
+  position: relative;
+  background-image: url("/img/cd.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 262px;
+  height: 150px;
+}
+.album-cover .cover {
+  position: relative;
+  z-index: 1;
+  width: 160px;
+  height: 160px;
+}
+.album-cover .songList {
+  position: absolute;
+  z-index: 0;
+  top: 0px;
+  left: 0;
+  width: 160px;
+  height: 160px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  border-radius: 25px;
+}
+.album-cover .songList p {
+  padding: 0;
+  margin: 0;
+}
+.album-cover:hover .songList {
+  -webkit-transform: translateX(130px);
+          transform: translateX(130px);
+}
+
 .albums-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -523,11 +559,22 @@ footer .note span {
   color: #FFDB58;
   border: 3px solid #FFDB58;
 }
-.albums-list .firstAl .album-cover {
+.albums-list .firstAl .cover {
   background-image: url("/img/firstCover.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.albums-list .firstAl .songList {
+  padding-top: 5px;
+  background-color: rgba(237, 215, 132, 0.8);
+}
+.albums-list .firstAl .songList p {
+  line-height: 17px;
+  font-family: "Chathura";
+  font-weight: 800;
+  font-size: 20px;
+  color: #1E1E1E;
 }
 .albums-list .secondAl {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(54, 45, 43, 0.5)), to(rgba(54, 45, 43, 0.5))), url("/img/secondAl.png");
@@ -559,11 +606,22 @@ footer .note span {
   color: #362D2B;
   border: 3px solid #362D2B;
 }
-.albums-list .secondAl .album-cover {
+.albums-list .secondAl .cover {
   background-image: url("/img/secondCover.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.albums-list .secondAl .songList {
+  padding-top: 5px;
+  background-color: rgba(54, 45, 43, 0.8);
+}
+.albums-list .secondAl .songList p {
+  line-height: 15px;
+  font-family: "Chathura";
+  font-weight: 800;
+  font-size: 20px;
+  color: #E8E7E8;
 }
 .albums-list .thirdAl {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(151, 112, 79, 0.6)), to(rgba(151, 112, 79, 0.6))), url("/img/thirdAl.png");
@@ -594,12 +652,22 @@ footer .note span {
   color: #7C5C41;
   border: 3px solid #7C5C41;
 }
-.albums-list .thirdAl .album-cover {
-  margin-bottom: 60px;
+.albums-list .thirdAl .cover {
   background-image: url("/img/thirdCover.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.albums-list .thirdAl .songList {
+  padding-top: 5px;
+  background-color: rgba(104, 68, 48, 0.8);
+}
+.albums-list .thirdAl .songList p {
+  line-height: 15px;
+  font-family: "Chathura";
+  font-weight: 800;
+  font-size: 20px;
+  color: #DDCFBF;
 }
 .albums-list .fourthAl {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 25, 49, 0.6)), to(rgba(15, 25, 49, 0.6))), url("/img/fourthAl.png");
@@ -630,12 +698,22 @@ footer .note span {
   color: #253864;
   border: 3px solid #253864;
 }
-.albums-list .fourthAl .album-cover {
-  margin-bottom: 60px;
+.albums-list .fourthAl .cover {
   background-image: url("/img/fourthCover.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.albums-list .fourthAl .songList {
+  padding-top: 5px;
+  background-color: rgba(9, 65, 100, 0.8);
+}
+.albums-list .fourthAl .songList p {
+  line-height: 15px;
+  font-family: "Chathura";
+  font-weight: 800;
+  font-size: 20px;
+  color: #EAE7E1;
 }
 
 .listen-btn {
@@ -650,7 +728,7 @@ footer .note span {
   font-size: 16px;
   color: #1E1E1E;
   text-align: center;
-  padding: 5px 0;
+  padding: 10px 0;
   margin: 10px auto;
 }
 
@@ -690,9 +768,17 @@ footer .note span {
   font-size: 48px;
   color: #FBF7F5;
   text-align: center;
-  padding-top: 50px;
+  padding: 50px 15px 0;
   -webkit-box-shadow: 7px 10px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 7px 10px 4px rgba(0, 0, 0, 0.25);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.singles-list_li:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .listenSin {
@@ -752,8 +838,8 @@ footer .note span {
 }
 
 .singles-sinFifth {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(54, 45, 43, 0.5)), to(rgba(54, 45, 43, 0.5))), url("/img/sinFifth .png");
-  background-image: linear-gradient(rgba(54, 45, 43, 0.5), rgba(54, 45, 43, 0.5)), url("/img/sinFifth .png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(54, 45, 43, 0.5)), to(rgba(54, 45, 43, 0.5))), url("/img/sinFifth.png");
+  background-image: linear-gradient(rgba(54, 45, 43, 0.5), rgba(54, 45, 43, 0.5)), url("/img/sinFifth.png");
   background-position: center, center;
   background-repeat: no-repeat;
   background-size: cover;
