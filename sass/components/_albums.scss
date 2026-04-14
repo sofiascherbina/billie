@@ -2,21 +2,24 @@
     margin-left: 100px;
 }
 .albums-nav{
+    @include bg($url:url('/img/al-header.png'),$position:1300px 10px, $size:contain);
+}
+.page-nav{
     background-color: $main-bg;
     display: flex;
     gap: 350px;
     height: 150px;
     padding: 50px 0;
-    @include bg($url:url('/img/al-header.png'),$position:1300px 10px, $size:contain);
     box-shadow: 6px 6px 6px rgba($color: #000000, $alpha: 1);
 }
-.title-al{
+.page-title{
     text-align: center;
-    @include text($family:'Covered By Your Grace', $size:48px, $color:#7C7064, $weight:400);
+    @include text($family:'Covered By Your Grace', $size:48px, $color:#7C7064, $weight:200);
     text-shadow: 6px 6px 6px rgba($color: #000000, $alpha: 25%);
     margin: 0;
+    -webkit-text-stroke: 1px white;
 }
-.al-main{
+.page-main{
     background-color: $dark-brown;
     padding: 100px 0 200px;
 }
