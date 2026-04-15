@@ -10,6 +10,7 @@
 .nav-list{
     display: flex;
     justify-content: space-around;
+    list-style-type: none;
     margin: 0;
     padding: 0;
     li{
@@ -236,6 +237,7 @@ $icons: 'slFirst', 'slSecond' ,'slThird', 'slFourth', 'slFifth', 'slSixth';
         width:600px;
         height: 450px;
         ul{
+            list-style-type: none;
             margin: 0;
             padding: 0;
         }
@@ -251,7 +253,6 @@ footer{
     width: 100%;
     height: 210px;
     background-color: $dark-brown;
-    // margin-top: 150px;
     @include bg($url:url('/img/footer-img.png'), $position:50px bottom, $size:213px 200px);
     .note{
         width: 500px;
@@ -281,7 +282,7 @@ footer{
     margin-bottom: 0;
     gap: 50px;
     height: 50px;
-
+    list-style-type: none;
      .icon:hover{
         fill: #716B69;
     }

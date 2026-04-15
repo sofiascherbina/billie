@@ -15,6 +15,7 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -318,6 +319,7 @@
   height: 450px;
 }
 .tattoSec .text ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -379,6 +381,7 @@ footer .note span {
   margin-bottom: 0;
   gap: 50px;
   height: 50px;
+  list-style-type: none;
 }
 .footer-content .networks .icon:hover {
   fill: #716B69;
@@ -482,6 +485,7 @@ footer .note span {
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   border-radius: 25px;
+  list-style-type: none;
 }
 .album-cover .songList p {
   padding: 0;
@@ -504,6 +508,7 @@ footer .note span {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  list-style-type: none;
 }
 .albums-list_li {
   width: 400px;
@@ -761,6 +766,7 @@ footer .note span {
           column-gap: 100px;
   row-gap: 50px;
   margin-bottom: 30px;
+  list-style-type: none;
 }
 .singles-list_li {
   width: 200px;
@@ -934,7 +940,7 @@ footer .note span {
 }
 
 .tourSec {
-  margin: 100px 0;
+  margin: 100px 0 0;
 }
 .tourSec .tourTitle {
   display: -webkit-box;
@@ -962,6 +968,8 @@ footer .note span {
   margin: 30px auto;
   background-color: grey;
   padding: 15px;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
 }
 .tourVideo_title {
   font-family: "Chathura";
@@ -976,8 +984,8 @@ footer .note span {
   height: 68px;
   margin: 80px auto;
 }
-.playBtn path:hover {
-  fill: #BEB7B4;
+.playBtn svg:hover {
+  fill: #ff0000;
 }
 
 .tourInfo {
@@ -1010,12 +1018,8 @@ footer .note span {
 .tourSetlist {
   border: 10px solid #7C7064;
   width: 890px;
-  margin: 0 auto 50px;
+  margin: 50px auto 0;
   padding: 0 40px 15px;
-  background-image: url("/img/hmhasPng.png");
-  background-position: right bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 .tourSetlist_title {
   margin: 0px 150px;
@@ -1051,9 +1055,129 @@ footer .note span {
   background-repeat: no-repeat;
   background-size: cover;
 }
+#hmhas .tourSetlist {
+  background-image: url("/img/hmhasPng.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#hmhas .tourVideo {
+  background-image: url("/img/hmhasTour.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#hte .tourTitle .title-line {
+  margin-left: 15px;
+  width: 550px;
+}
+#hte .tourVideo {
+  background-image: url("/img/hteTour.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#hte .tourInfo {
+  width: 1200px;
+}
+#hte .tourInfo_photo {
+  height: 450px;
+  background-image: url("/img/htePic.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#hte .tourInfo_text {
+  width: 650px;
+  height: 450px;
+}
+#hte .tourSetlist {
+  background-image: url("/img/htePng.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#hte .tourSetlist_songs {
+  gap: 0px;
+}
+#hte .tourSetlist_songs ul li {
+  width: 300px;
+}
+
+#wwafawdwg .tourTitle {
+  position: relative;
+}
+#wwafawdwg .tourTitle .title-line {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 600px;
+}
+#wwafawdwg .tourVideo {
+  background-image: url("/img/wwafawdwgTour.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#wwafawdwg .tourInfo {
+  width: 1200px;
+}
+#wwafawdwg .tourInfo_photo {
+  background-image: url("/img/wwagawdwgPic.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#wwafawdwg .tourInfo_text {
+  width: 650px;
+  height: 400px;
+}
+#wwafawdwg .tourSetlist {
+  background-image: url("/img/wwagawdwgPng.png");
+  background-position: right -70px;
+  background-repeat: no-repeat;
+  background-size: 330px 600px;
+}
+
+#dsam .tourTitle {
+  position: relative;
+}
+#dsam .tourTitle .title-line {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 600px;
+}
+#dsam .tourVideo {
+  background-image: url("/img/dsamTour.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#dsam .tourInfo {
+  width: 1200px;
+}
+#dsam .tourInfo_photo {
+  background-image: url("/img/dsamPic.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#dsam .tourInfo_text {
+  width: 700px;
+}
+#dsam .tourSetlist {
+  background-image: url("/img/dsamPng.png");
+  background-position: 350px 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#dsam .tourSetlist ul li {
+  width: 300px;
+}
 
 * {
-  list-style-type: none;
   text-decoration: none;
 }
 
