@@ -1,0 +1,43 @@
+.news-nav{
+        padding: 20px 0;
+    & .page-title{
+        width: 700px;
+    }
+}
+.search-cont{
+    width: 100%;
+    height: 60px;
+    position: relative;
+    & input{
+        width: 100%;
+        height: 60px;
+        padding: 0 60px;
+        @include text($family:'Chelsea Market', $size:25px, $color:#E8E7E8, $weight:400);
+        background-color: rgba($color: #7C7064, $alpha: 0.4);
+        border-radius: 25px;
+        border: none;
+        box-shadow: 4px 7px 4px rgba($color: #000000, $alpha: 25%);
+        &:focus{
+            outline: none;
+        }
+    }
+    & svg{
+        position: absolute;
+        top: 10px;
+        right: 60px;
+    }
+}
+.articles-list{
+    margin-top: 100px;
+    list-style-type: none;
+    & h2{
+         @include text($family:'Chau Philomene One', $size:36px, $color:#FBF7F5, $weight:400);
+        text-shadow: 6px 6px 6px rgba($color: #000000, $alpha: 25%);
+        margin-bottom: 20px;
+    }
+    & p{
+        border-top: 3px solid #FBF7F5;
+        padding: 15px;
+         @include text($family:'Chathura', $size:40px, $color:#FFFBFB, $weight:600);
+    }
+}
