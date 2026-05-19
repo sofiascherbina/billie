@@ -1216,6 +1216,9 @@ footer .note span {
   margin-top: 100px;
   list-style-type: none;
 }
+.articles-list li {
+  margin: 0 0 150px;
+}
 .articles-list h2 {
   font-family: "Chau Philomene One";
   font-weight: 400;
@@ -1231,6 +1234,70 @@ footer .note span {
   font-weight: 600;
   font-size: 40px;
   color: #FFFBFB;
+}
+.articles-list .newsLink {
+  margin: 15px;
+  font-family: "Chathura";
+  font-weight: 600;
+  font-size: 40px;
+  color: #FFFBFB;
+  text-decoration: none;
+}
+.articles-list .newsLink:hover {
+  font-family: "Chathura";
+  font-weight: 600;
+  font-size: 40px;
+  color: #7C7064;
+}
+
+.newsVideoCont {
+  background-color: rgba(124, 112, 100, 0.4);
+  height: 500px;
+  width: 800px;
+  padding: 50px 0;
+  margin: 30px auto;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.newsVideo {
+  width: 700px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 130px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.newsVideo .playBtn {
+  margin: 0 auto;
+}
+
+.WSJ {
+  background-image: url("/img/newsPhoto(billioners).png");
+  background-position: 0 -30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grammy {
+  background-image: url("/img/newsPhotoGrammy.png");
+  background-position: 0 -30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.movie {
+  background-image: url("/img/newsPhotoMovie.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.premiere {
+  background-image: url("/img/newsPhotoPremiere.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 * {

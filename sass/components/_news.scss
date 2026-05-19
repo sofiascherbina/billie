@@ -30,6 +30,9 @@
 .articles-list{
     margin-top: 100px;
     list-style-type: none;
+    & li{
+        margin: 0 0 150px;
+    }
     & h2{
          @include text($family:'Chau Philomene One', $size:36px, $color:#FBF7F5, $weight:400);
         text-shadow: 6px 6px 6px rgba($color: #000000, $alpha: 25%);
@@ -40,4 +43,43 @@
         padding: 15px;
          @include text($family:'Chathura', $size:40px, $color:#FFFBFB, $weight:600);
     }
+    & .newsLink{
+        margin: 15px;
+        @include text($family:'Chathura', $size:40px, $color:#FFFBFB, $weight:600);
+        text-decoration: none;
+        &:hover{
+            @include text($family:'Chathura', $size:40px, $color:#7C7064, $weight:600);
+        }
+    }
+}
+
+.newsVideoCont{
+    background-color: rgba($color: #7C7064, $alpha: 0.4);
+    height: 500px;
+    width: 800px;
+    padding: 50px 0;
+    margin: 30px auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+.newsVideo{
+    width: 700px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 130px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+     & .playBtn{
+        margin: 0 auto;
+     }
+}
+.WSJ{
+    @include bg($url:url('/img/newsPhoto\(billioners\).png'),$position:0 -30px, $size:cover);
+}
+.grammy{
+    @include bg($url:url('/img/newsPhotoGrammy.png'),$position:0 -30px, $size:cover);
+}
+.movie{
+    @include bg($url:url('/img/newsPhotoMovie.png'),$position:center, $size:cover);
+}
+.premiere{
+    @include bg($url:url('/img/newsPhotoPremiere.png'),$position:center, $size:cover);
 }
